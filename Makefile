@@ -1,4 +1,5 @@
 @all:
+	make -C PD
 	make -C TSR
 	make -C E405
 	make -C Colleoni
@@ -7,6 +8,7 @@
 
 install:
 	mkdir -p ~/.local/share/icons
+	make -C PD install
 	make -C TSR install
 	make -C E405 install
 	make -C Colleoni install
